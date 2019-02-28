@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">bletarayici</string>
+    <string name="action_settings">Settings</string>
+    <string name="last_seen">En son görülme</string>
+    <string name="just_now">Şimdi</string>
+    <string name="seconds">Saniye</string>
+    <string name="seconds_ago">Saniye önce</string>
+    <string name="minute_ago">Dakika önce</string>
+    <string name="hour_ago">Saat önce</string>
+    <string name="ble_not_supported">Cihazınız BLE desteklemektedir.</string>
+</resources>
