@@ -43,10 +43,8 @@ import uk.co.alt236.bluetoothlelib.device.BluetoothLeDevice;
 public class MainActivity extends AppCompatActivity {
 
     //Bluetooth cihazlarını bulabilmek için gerekli nesne tanımları
-    private BluetoothAdapter mBluetoothAdapter;
-    private BluetoothLeScanner mScanner;
 
-    private ScanCallback mScanCallback;
+    private BluetoothLeScanner mScanner;
     public static BluetoothLeDeviceStore mDeviceStore;
     private BluetoothUtils mBluetoothUtils;
     private ScanResultAdapter mAdapter;
@@ -212,8 +210,8 @@ public class MainActivity extends AppCompatActivity {
         blelocationText.setTextColor(Color.RED);
         mSCAN_STATUS="STOP";
         mScanner.scanLeDevice(-1, false);
-        //stopService(new Intent(MainActivity.this,BackgroundService.class));
-        //alarmManager.cancel(pendingIntent);
+        stopService(new Intent(MainActivity.this,BackgroundService.class));
+        alarmManager.cancel(pendingIntent);
     }
 
     @Override
